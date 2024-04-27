@@ -1,0 +1,27 @@
+// Relay control pins
+const int relayPin1 = 7; // Connected to IN1
+const int relayPin2 = 8; // Connected to IN2
+const int relayPin3 = 9; // Connected to IN3
+
+void setup() {
+  pinMode(relayPin1, OUTPUT);
+  pinMode(relayPin2, OUTPUT);
+  pinMode(relayPin3, OUTPUT);
+}
+
+void loop() {
+  // Turn on relay 1
+  digitalWrite(relayPin1, HIGH);
+  delay(2000);
+  digitalWrite(relayPin1, LOW);
+
+  // Turn on relay 2
+  digitalWrite(relayPin2, HIGH);
+  delay(2000);
+  digitalWrite(relayPin2, LOW);
+
+  // Turn on relay 3
+  digitalWrite(relayPin3, HIGH);
+  delay(2000);
+  digitalWrite(relayPin3, LOW);
+}
